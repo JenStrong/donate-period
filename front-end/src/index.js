@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Charity from './charity';
 import Wishlist from './wishlist';
+import Form from './form';
 
 class App extends React.Component {
   render() {
     return (
-    <Charity />
+      <div>
+        <Charity />
+        <Form />
+      </div>
     );
   }
 }
@@ -14,4 +18,4 @@ class App extends React.Component {
 ReactDOM.render(
   <App />,
   document.getElementById('root')
-); 
+);
